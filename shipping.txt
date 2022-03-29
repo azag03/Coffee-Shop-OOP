@@ -1,0 +1,3 @@
+Standard Shipping, normal shipping method, 4.50, 1.86
+FedEx, faster but more expensive, 0.00, 4.65
+UPS, less expensive; for very large orders, 12.00, 0.95
