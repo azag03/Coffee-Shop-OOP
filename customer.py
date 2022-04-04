@@ -1,8 +1,20 @@
 class Customer(object):
 
-    def __init__(self, name, order):
-        self.name = name
-        self.orders = order
+    @property
+    def name(self):
+        return self._name
+
+    def __init__(self, name):
+        self._name = name
+        self.ordersList = []
 
     def __str__(self):
-        return f'Orders for {self.name}:\n{self.orders}'
+        string = f'Orders for {self._name}:\n'
+        for order in self.ordersList:
+            string += f'{order}\n'
+        return string
+
+    def get_name(self):
+        return self._name
+
+    name = property(get_name)
